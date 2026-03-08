@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balatro – Accueil / Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!--
+    LANGUAGE SYSTEM (CSS-only):
+    The hidden checkbox #lang-toggle must be BEFORE .site-shell.
+    Its :checked state controls all .lang-en / .lang-fr elements
+    inside .site-shell via the general sibling combinator (~).
+  -->
+  <input type="checkbox" id="lang-toggle">
+
+  <div class="site-shell">
+
+    <nav>
+      <a href="index.html" class="active">
+        <span class="lang-en-inline">Home</span>
+        <span class="lang-fr-inline">Accueil</span>
+      </a>
+      <a href="rules.html">
+        <span class="lang-en-inline">Rules</span>
+        <span class="lang-fr-inline">Regles</span>
+      </a>
+      <a href="modding.html">Modding</a>
+      <a href="bmp.html">BMP</a>
+      <a href="contact.html">Contact</a>
+
+      <div class="lang-btn-wrap">
+        <div class="lang-btn">
+          <label class="lbl-en" for="lang-toggle">EN</label>
+          <label class="lbl-fr" for="lang-toggle">FR</label>
+        </div>
+      </div>
+    </nav>
+
+    <main class="page">
+
+      <!-- EN VERSION -->
+      <div class="lang-en">
+        <h1 class="home-title">Balatro</h1>
+        <div class="welcome-card">
+          <h2>🎲 Balatro: Presentation &amp; Guide</h2>
+          <p>
+            Introduction to Balatro — an innovative solo card game that combines strategy,
+            probabilities and a unique scoring mechanic. Inspired by poker games and
+            deck-building mechanics, Balatro immerses you in an experience where every hand
+            is an opportunity to maximise your gains and beat your records. It's a Roguelike.
+          </p>
+          <h2 class="feat">📖 Key Features</h2>
+          <ul>
+            <li><strong>Poker Mechanics:</strong> Build poker hands to score points.</li>
+            <li><strong>Joker System:</strong> Buy upgrades and jokers to boost your scores.</li>
+            <li><strong>Campaign Mode:</strong> Progress through unique tiers and challenges.</li>
+            <li><strong>Retro Visuals:</strong> A clean and colourful visual style.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- FR VERSION -->
+      <div class="lang-fr">
+        <h1 class="home-title">Balatro</h1>
+        <div class="welcome-card">
+          <h2>🎲 Balatro : Présentation et Guide</h2>
+          <p>
+            Introduction à Balatro — un jeu de cartes solo innovant qui combine stratégie,
+            probabilités et une mécanique de scoring unique. Inspiré par les jeux de poker
+            et les mécaniques de deck-building, Balatro vous plonge dans une expérience où
+            chaque main est une opportunité de maximiser vos gains et de battre vos records.
+            C'est un Roguelike.
+          </p>
+          <h2 class="feat">📖 Fonctionnalités Clés</h2>
+          <ul>
+            <li><strong>Mécaniques de Poker :</strong> Créez des mains de poker pour marquer des points.</li>
+            <li><strong>Système de Jokers :</strong> Achetez des améliorations et des jokers pour booster vos scores.</li>
+            <li><strong>Mode Campagne :</strong> Progressez à travers des paliers et des défis uniques.</li>
+            <li><strong>Graphismes Rétro :</strong> Un style visuel épuré et coloré.</li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>Balatro Project</footer>
+
+  </div><!-- /.site-shell -->
+
+</body>
+</html>
